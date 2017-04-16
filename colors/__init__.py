@@ -1,4 +1,4 @@
-from colors.constants import *
+from colors.constants import * # noqa
 
 
 __author__ = 'Jeffrey Seifried'
