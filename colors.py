@@ -1,4 +1,14 @@
-from colors.colorizer import Colorizer
+import typing
+
+
+def Colorizer(color: int, weight: int = 1) -> typing.Callable[[str], str]:
+    """Function for bash-style color formatting."""
+
+    def inner(value: str) -> str:
+        return template.format(value)
+
+    template = "\033[{:d};{:d}m{{:s}}\033[0m".format(weight, color)
+    return inner
 
 
 RED = Colorizer(31)

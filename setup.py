@@ -1,10 +1,11 @@
 from setuptools import setup
 
-from colors import __author__
-from colors import __email__
-from colors import __program__
-from colors import __url__
-from colors import __version__
+
+__author__ = "Jeffrey Seifried"
+__email__ = "jeffrey.seifried@gmail.com"
+__program__ = "colors"
+__url__ = "http://github.com/jeffseif/{}".format(__program__)
+__version__ = "1.0.0"
 
 
 setup(
@@ -12,13 +13,7 @@ setup(
     author_email=__email__,
     install_requires=[],
     name=__program__,
-    packages=[__program__],
-    platforms='all',
-    setup_requires=[
-        'setuptools',
-        'tox',
-    ],
-    test_suite='tests',
+    packages=["."],
     url=__url__,
     version=__version__,
 )
