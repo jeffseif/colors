@@ -5,7 +5,7 @@ Helpers for printing colored text in bash
 ## Install to the system
 
 ```bash
-pip install -e git+https://github.com/jeffseif/colors.git#egg=colors
+pip install git+https://github.com/jeffseif/colors.git@main
 ```
 
 ## Use in a package
